@@ -1,0 +1,67 @@
+body {
+  font-family: "微软雅黑", sans-serif;
+  text-align: center;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  white-space: pre-line;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.char-box {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  width: 100px;
+  background-color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.char-box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.char-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.char-name {
+  margin-top: 5px;
+  font-size: 14px;
+}
